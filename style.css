@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+body {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    perspective: 900px;
+}
+.card {
+    width: 15%;
+    height: 150%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #555;
+    transform: rotateX(60deg) scale(.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all .5s ease;
+}
+img {
+    width: 80%;
+    height: 40%;
+}
+.card:hover {
+    transform: rotate(0deg) scale(1) translateY(10px);
+}
+.title {
+    color: #555;
+    font-weight: 900;
+}
